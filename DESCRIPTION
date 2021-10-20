@@ -1,0 +1,25 @@
+Package: supercompress
+Type: Package
+Title: Supervised Compression of Big Data
+Version: 1.0
+Authors@R: c(
+    person(given = "Chaofan",
+           family = "Huang",
+           role = c("aut", "cre"),
+           email = "chaofan.huang@gatech.edu"),
+    person(given = "V. Roshan",
+           family = "Joseph",
+           role = c("aut"))
+    )
+Imports: FNN, stats
+Description: A supervised compression method that incorporates the response for reducing big data to a carefully selected subset. Please see Joseph and Mak (2021) <doi:10.1002/sam.11508>. This research is supported by a U.S. National Science Foundation (NSF) grant CMMI-1921646.
+License: GPL (>= 2)
+Encoding: UTF-8
+RoxygenNote: 7.1.1
+NeedsCompilation: no
+Packaged: 2021-10-19 18:57:05 UTC; billhuang
+Author: Chaofan Huang [aut, cre],
+  V. Roshan Joseph [aut]
+Maintainer: Chaofan Huang <chaofan.huang@gatech.edu>
+Repository: CRAN
+Date/Publication: 2021-10-20 12:00:01 UTC
