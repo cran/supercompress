@@ -1,7 +1,7 @@
 Package: supercompress
 Type: Package
 Title: Supervised Compression of Big Data
-Version: 1.0
+Version: 1.1
 Authors@R: c(
     person(given = "Chaofan",
            family = "Huang",
@@ -17,9 +17,9 @@ License: GPL (>= 2)
 Encoding: UTF-8
 RoxygenNote: 7.1.1
 NeedsCompilation: no
-Packaged: 2021-10-19 18:57:05 UTC; billhuang
+Packaged: 2022-01-14 04:29:17 UTC; billhuang
 Author: Chaofan Huang [aut, cre],
   V. Roshan Joseph [aut]
 Maintainer: Chaofan Huang <chaofan.huang@gatech.edu>
 Repository: CRAN
-Date/Publication: 2021-10-20 12:00:01 UTC
+Date/Publication: 2022-01-14 04:40:02 UTC

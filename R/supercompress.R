@@ -165,14 +165,14 @@ supercompress=function(n,x,y,lam=0,standardize=TRUE){
       cluster=drop(knnx.index(Dx,x,k=1))
       m=length(unique(cluster))
       if(m<dim(Dx)[1]){
-        miss=(1:m)[!(1:m)%in%cluster]
+        miss=(1:dim(Dx)[1])[!(1:dim(Dx)[1])%in%cluster]
         miss.near=knnx.index(x,matrix(Dx[miss,],ncol=p),k=1)
         Dx[miss,]=matrix(x[miss.near,],ncol=p)
         cluster=drop(knnx.index(Dx,x,k=1))
         m=length(unique(cluster))
         if(m<dim(Dx)[1]){
           m=length(unique(cluster))
-          miss=(1:m)[!(1:m)%in%cluster]
+          miss=(1:dim(Dx)[1])[!(1:dim(Dx)[1])%in%cluster]
           Dx=matrix(Dx[-miss,],ncol=p)
           cluster=drop(knnx.index(Dx,x,k=1))
         }
@@ -210,14 +210,14 @@ supercompress=function(n,x,y,lam=0,standardize=TRUE){
       cluster=drop(knnx.index(Dx,x,k=1))
       m=length(unique(cluster))
       if(m<dim(Dx)[1]){
-        miss=(1:m)[!(1:m)%in%cluster]
+        miss=(1:dim(Dx)[1])[!(1:dim(Dx)[1])%in%cluster]
         miss.near=knnx.index(x,matrix(Dx[miss,],ncol=p),k=1)
         Dx[miss,]=matrix(x[miss.near,],ncol=p)
         cluster=drop(knnx.index(Dx,x,k=1))
         m=length(unique(cluster))
         if(m<dim(Dx)[1]){
           m=length(unique(cluster))
-          miss=(1:m)[!(1:m)%in%cluster]
+          miss=(1:dim(Dx)[1])[!(1:dim(Dx)[1])%in%cluster]
           Dx=matrix(Dx[-miss,],ncol=p)
           cluster=drop(knnx.index(Dx,x,k=1))
         }
